@@ -3,6 +3,7 @@ from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import string
 
+
 def init_nlp_tools():
     """
     Hàm khởi tạo và đảm bảo tài nguyên NLTK đầy đủ.
@@ -19,6 +20,7 @@ def init_nlp_tools():
     lemmatizer = WordNetLemmatizer()
     
     return stemmer, lemmatizer
+
 
 def stem_lema(text):
     """
@@ -50,6 +52,7 @@ def stem_lema(text):
         processed_tokens.append(stem)
 
     return processed_tokens
+
 
 def test():
     sample_text = "Running runners easily ran towards better universities."

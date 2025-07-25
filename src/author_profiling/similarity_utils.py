@@ -1,6 +1,7 @@
-from sklearn.metrics.pairwise import cosine_similarity
+# from collections import Counter
 import numpy as np
-from collections import Counter
+from sklearn.metrics.pairwise import cosine_similarity
+
 
 def cosine_similarity_sklearn(profile1, profile2):
     """
